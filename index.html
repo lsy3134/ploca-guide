@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0" />
+  <title>📱 플로카(PLOCA) 앱 바탕화면 설치 가이드 (그림 설명)</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="📱🍎 플로카(PLOCA) 앱 바탕화면 설치 가이드 (그림 설명)" />
+  <meta property="og:description" content="갤럭시·아이폰 휴대폰 바탕화면에 플로카 앱 아이콘을 만드는 순서입니다. 그림을 보고 그대로 따라해 보세요!" />
+  <meta property="og:image" content="og-thumb.png" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      background: #FFF8F4;
+      color: #1F2937;
+      line-height: 1.5;
+      padding-bottom: 80px;
+    }
+    .container {
+      max-width: 540px;
+      margin: 0 auto;
+      padding: 20px 16px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #EA580C 0%, #C2410C 100%);
+      color: #fff;
+      border-radius: 22px;
+      padding: 24px 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(234, 88, 12, 0.22);
+      margin-bottom: 18px;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.22);
+      font-size: 13px;
+      font-weight: 700;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+    .hero h1 {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      letter-spacing: -0.4px;
+    }
+    .hero p {
+      font-size: 14px;
+      opacity: 0.95;
+      margin-bottom: 16px;
+    }
+    .cta-btn {
+      display: block;
+      width: 100%;
+      background: #FFFFFF;
+      color: #C2410C;
+      text-decoration: none;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 15px 18px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      transition: transform 0.15s;
+    }
+    .cta-btn:active {
+      transform: scale(0.98);
+    }
+    .tabs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+      background: #F3E8E2;
+      padding: 6px;
+      border-radius: 16px;
+    }
+    .tab-btn {
+      border: none;
+      background: transparent;
+      padding: 14px 10px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 800;
+      color: #6B7280;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .tab-btn.active.android {
+      background: #EA580C;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(234, 88, 12, 0.25);
+    }
+    .tab-btn.active.iphone {
+      background: #2563EB;
+      color: #fff;
+      box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+    }
+    .guide-section {
+      display: none;
+    }
+    .guide-section.active {
+      display: block;
+    }
+    .notice-banner {
+      background: #FEF3C7;
+      border: 1px solid #F59E0B;
+      color: #92400E;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 12px 14px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .step-img-card {
+      margin-bottom: 18px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+      background: #fff;
+    }
+    .step-img-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .bottom-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid #E5E7EB;
+      padding: 12px 16px;
+      z-index: 100;
+    }
+    .bottom-bar-inner {
+      max-width: 540px;
+      margin: 0 auto;
+      display: flex;
+      gap: 10px;
+    }
+    .bottom-btn {
+      flex: 1;
+      text-align: center;
+      background: #EA580C;
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      padding: 14px;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero">
+      <div class="hero-badge">초간단 1분 그림 가이드</div>
+      <h1>📲 플로카 앱 바탕화면 설치 방법</h1>
+      <p>사용하시는 휴대폰 기종(갤럭시 / 아이폰)을 선택하고<br>아래 그림의 빨간 동그라미를 순서대로 따라 해보세요!</p>
+      <a class="cta-btn" href="https://www.myploca.com" target="_blank" rel="noopener">
+        🚀 플로카(www.myploca.com) 바로 열기 ›
+      </a>
+    </div>
+
+    <div class="tabs">
+      <button id="btn-android" class="tab-btn android active" onclick="showTab('android')">
+        📱 갤럭시 (안드로이드)
+      </button>
+      <button id="btn-iphone" class="tab-btn iphone" onclick="showTab('iphone')">
+        🍎 아이폰 (iOS)
+      </button>
+    </div>
+
+    <!-- ANDROID GUIDE -->
+    <div id="sec-android" class="guide-section active">
+      <div class="notice-banner">
+        💡 갤럭시(안드로이드)는 총 5단계입니다. 아래 그림을 순서대로 따라 해주세요!
+      </div>
+      <div class="step-img-card"><img src="android_step_1.png" alt="갤럭시 설치 1단계" /></div>
+      <div class="step-img-card"><img src="android_step_2.png" alt="갤럭시 설치 2단계" /></div>
+      <div class="step-img-card"><img src="android_step_3.png" alt="갤럭시 설치 3단계" /></div>
+      <div class="step-img-card"><img src="android_step_4.png" alt="갤럭시 설치 4단계" /></div>
+      <div class="step-img-card"><img src="android_step_5.png" alt="갤럭시 설치 5단계" /></div>
+    </div>
+
+    <!-- IPHONE GUIDE -->
+    <div id="sec-iphone" class="guide-section">
+      <div class="notice-banner" style="background:#DBEAFE; border-color:#3B82F6; color:#1E40AF;">
+        💡 아이폰(iOS)은 총 6단계입니다. 아래 그림을 순서대로 따라 해주세요!
+      </div>
+      <div class="step-img-card"><img src="iphone_step_1.png" alt="아이폰 설치 1단계" /></div>
+      <div class="step-img-card"><img src="iphone_step_2.png" alt="아이폰 설치 2단계" /></div>
+      <div class="step-img-card"><img src="iphone_step_3.png" alt="아이폰 설치 3단계" /></div>
+      <div class="step-img-card"><img src="iphone_step_4.png" alt="아이폰 설치 4단계" /></div>
+      <div class="step-img-card"><img src="iphone_step_5.png" alt="아이폰 설치 5단계" /></div>
+      <div class="step-img-card"><img src="iphone_step_6.png" alt="아이폰 설치 6단계" /></div>
+    </div>
+  </div>
+
+  <div class="bottom-bar">
+    <div class="bottom-bar-inner">
+      <a class="bottom-btn" href="https://www.myploca.com" target="_blank" rel="noopener">
+        👉 설치하러 가기 (www.myploca.com)
+      </a>
+    </div>
+  </div>
+
+  <script>
+    function showTab(os) {
+      document.getElementById('btn-android').classList.toggle('active', os === 'android');
+      document.getElementById('btn-iphone').classList.toggle('active', os === 'iphone');
+      document.getElementById('sec-android').classList.toggle('active', os === 'android');
+      document.getElementById('sec-iphone').classList.toggle('active', os === 'iphone');
+    }
+    // Auto-select iPhone tab if user opens on iPhone/iPad
+    if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+      showTab('iphone');
+    }
+  </script>
+</body>
+</html>
