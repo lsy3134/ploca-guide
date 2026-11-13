@@ -3,25 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0" />
-  <title>플로카(PLOCA) - 부모님 병원 동행·약봉투 정리 AI 건강지갑 | 앱 설치 가이드</title>
-  <meta name="description" content="플로카(PLOCA) 공식 앱 설치 가이드 및 바로가기(www.myploca.com). 부모님 병원 동행 질문지, 약봉투·처방전 촬영 정리, 혈압·혈당 기록을 가족과 안전하게 공유하는 플로카 AI 건강지갑입니다." />
-  <meta name="keywords" content="플로카, PLOCA, myploca, 플로카 건강지갑, 플로카 앱, 부모님 병원 동행, 약봉투 정리, 가족 건강지갑" />
-  <link rel="canonical" href="https://guide.myploca.com/" />
+  <title>📱 플로카(PLOCA) 앱 바탕화면 설치 가이드 (그림 설명)</title>
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="플로카 (PLOCA)" />
-  <meta property="og:url" content="https://guide.myploca.com/" />
   <meta property="og:title" content="📱🍎 플로카(PLOCA) 앱 바탕화면 설치 가이드 (그림 설명)" />
-  <meta property="og:description" content="갤럭시(삼성 인터넷·크롬)·아이폰 바탕화면에 플로카 앱 아이콘을 만드는 순서입니다!" />
+  <meta property="og:description" content="갤럭시는 꼭 '삼성 인터넷(삼성 브라우저)'으로, 아이폰은 '사파리'로 열어 그림대로 따라해 보세요!" />
   <meta property="og:image" content="https://guide.myploca.com/og-thumb.png" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "플로카",
-    "alternateName": ["PLOCA", "플로카 건강지갑", "myploca", "플로카 AI 건강지갑"],
-    "url": "https://www.myploca.com/"
-  }
-  </script>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -29,7 +15,7 @@
       background: #FFF8F4;
       color: #1F2937;
       line-height: 1.5;
-      padding-bottom: 92px;
+      padding-bottom: 84px;
       word-break: keep-all;
     }
     .container {
@@ -41,10 +27,10 @@
       background: linear-gradient(135deg, #EA580C 0%, #C2410C 100%);
       color: #fff;
       border-radius: 22px;
-      padding: 22px 18px;
+      padding: 24px 20px;
       text-align: center;
       box-shadow: 0 8px 20px rgba(234, 88, 12, 0.22);
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
     .hero-badge {
       display: inline-block;
@@ -56,7 +42,7 @@
       margin-bottom: 10px;
     }
     .hero h1 {
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 800;
       margin-bottom: 8px;
       letter-spacing: -0.4px;
@@ -64,7 +50,7 @@
     .hero p {
       font-size: 14px;
       opacity: 0.95;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
     }
     .cta-btn {
       display: block;
@@ -72,20 +58,12 @@
       background: #FFFFFF;
       color: #C2410C;
       text-decoration: none;
-      font-size: 16px;
+      font-size: 17px;
       font-weight: 800;
-      padding: 14px 16px;
+      padding: 15px 18px;
       border-radius: 14px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
       transition: transform 0.15s;
-    }
-    .cta-btn + .cta-btn {
-      margin-top: 8px;
-    }
-    .cta-btn.samsung {
-      background: #5B21B6;
-      color: #FFFFFF;
-      border: 2px solid rgba(255, 255, 255, 0.45);
     }
     .cta-btn:active {
       transform: scale(0.98);
@@ -94,7 +72,7 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 10px;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       background: #F3E8E2;
       padding: 6px;
       border-radius: 16px;
@@ -102,7 +80,7 @@
     .tab-btn {
       border: none;
       background: transparent;
-      padding: 13px 10px;
+      padding: 14px 10px;
       border-radius: 12px;
       font-size: 15px;
       font-weight: 800;
@@ -126,84 +104,68 @@
     .guide-section.active {
       display: block;
     }
-    /* 갤럭시 내 브라우저 선택 서브탭 */
-    .sub-tabs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 8px;
-      margin-bottom: 14px;
-    }
-    .sub-tab-btn {
-      border: 2px solid #E5E7EB;
-      background: #FFFFFF;
-      padding: 12px 8px;
-      border-radius: 14px;
-      font-size: 13.5px;
-      font-weight: 800;
-      color: #4B5563;
-      cursor: pointer;
-      line-height: 1.3;
-      text-align: center;
-    }
-    .sub-tab-btn span.sub-badge {
-      display: inline-block;
-      font-size: 11px;
-      font-weight: 800;
-      padding: 2px 7px;
-      border-radius: 999px;
-      margin-bottom: 4px;
-    }
-    .sub-tab-btn.active.samsung-tab {
-      border-color: #6D28D9;
-      background: #F5F3FF;
-      color: #5B21B6;
-      box-shadow: 0 3px 10px rgba(109, 40, 217, 0.14);
-    }
-    .sub-tab-btn.active.chrome-tab {
-      border-color: #EA580C;
-      background: #FFF7ED;
-      color: #C2410C;
-      box-shadow: 0 3px 10px rgba(234, 88, 12, 0.14);
-    }
-    .warning-card {
+    .samsung-must-box {
       background: #FEF2F2;
-      border: 2px solid #EF4444;
-      border-radius: 16px;
-      padding: 14px 15px;
-      margin-bottom: 14px;
-      color: #991B1B;
+      border: 2.5px solid #DC2626;
+      border-radius: 18px;
+      padding: 16px 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 4px 14px rgba(220, 38, 38, 0.1);
     }
-    .warning-card-title {
-      font-size: 15px;
+    .samsung-must-title {
+      font-size: 16.5px;
       font-weight: 900;
       color: #DC2626;
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      margin-bottom: 8px;
+      line-height: 1.35;
     }
-    .warning-card-desc {
-      font-size: 13.5px;
-      font-weight: 600;
-      line-height: 1.5;
+    .samsung-must-body {
+      font-size: 14px;
+      font-weight: 700;
       color: #7F1D1D;
+      line-height: 1.55;
+      background: #FFFFFF;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid #FECACA;
     }
-    .warning-card-desc strong {
-      background: #FEE2E2;
-      padding: 1px 5px;
-      border-radius: 4px;
+    .samsung-must-body strong.purple {
+      color: #5B21B6;
+      background: #EDE9FE;
+      padding: 1px 6px;
+      border-radius: 5px;
+      font-weight: 900;
+    }
+    .samsung-must-body strong.red {
       color: #B91C1C;
+      background: #FEE2E2;
+      padding: 1px 6px;
+      border-radius: 5px;
+      font-weight: 900;
+    }
+    .samsung-open-btn {
+      display: block;
+      width: 100%;
+      margin-top: 12px;
+      background: #5B21B6;
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15.5px;
       font-weight: 800;
+      padding: 13px 14px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(91, 33, 182, 0.22);
     }
     .notice-banner {
       background: #FEF3C7;
       border: 1px solid #F59E0B;
       color: #92400E;
-      font-size: 13.5px;
+      font-size: 14px;
       font-weight: 700;
       padding: 12px 14px;
       border-radius: 12px;
-      margin-bottom: 14px;
+      margin-bottom: 16px;
       text-align: center;
     }
     .step-img-card {
@@ -212,105 +174,21 @@
       overflow: hidden;
       box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
       background: #fff;
-      border: 1px solid #FED7AA;
     }
     .step-img-card img {
       width: 100%;
       height: auto;
       display: block;
     }
-    .step-tip-bar {
+    .step-caption {
       background: #F5F3FF;
-      border-bottom: 1px solid #DDD6FE;
-      color: #5B21B6;
-      padding: 10px 14px;
-      font-size: 13px;
-      font-weight: 800;
-      text-align: center;
-    }
-    /* 크롬/엣지 전용 시각 카드 */
-    .chrome-step-card {
-      background: #FFFFFF;
-      border: 2px solid #FED7AA;
-      border-radius: 18px;
-      padding: 18px 16px;
-      margin-bottom: 14px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    }
-    .chrome-step-head {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
-    }
-    .chrome-step-num {
-      background: #EA580C;
-      color: #FFFFFF;
-      font-size: 13px;
-      font-weight: 800;
-      padding: 4px 10px;
-      border-radius: 8px;
-      flex-shrink: 0;
-    }
-    .chrome-step-title {
-      font-size: 16px;
-      font-weight: 800;
-      color: #111827;
-    }
-    .chrome-step-body {
-      font-size: 14px;
-      color: #374151;
-      font-weight: 600;
-      line-height: 1.55;
-      background: #F9FAFB;
-      padding: 12px 14px;
-      border-radius: 12px;
-    }
-    .chrome-mock-menu {
-      margin-top: 12px;
-      border: 2px solid #E5E7EB;
-      border-radius: 14px;
-      overflow: hidden;
-      background: #FFFFFF;
-    }
-    .mock-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      border-bottom: 2px solid #C4B5FD;
+      color: #4C1D95;
       padding: 11px 14px;
       font-size: 13.5px;
-      font-weight: 700;
-      border-bottom: 1px solid #F3F4F6;
-    }
-    .mock-row.bad {
-      background: #FEF2F2;
-      color: #991B1B;
-      text-decoration: line-through;
-    }
-    .mock-row.good {
-      background: #FFF7ED;
-      border: 2px solid #EA580C;
-      color: #C2410C;
-      font-size: 14.5px;
-      font-weight: 900;
-    }
-    .badge-bad {
-      background: #DC2626;
-      color: #fff;
-      font-size: 11px;
       font-weight: 800;
-      padding: 3px 8px;
-      border-radius: 999px;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .badge-good {
-      background: #EA580C;
-      color: #fff;
-      font-size: 11px;
-      font-weight: 800;
-      padding: 3px 8px;
-      border-radius: 999px;
+      text-align: center;
+      line-height: 1.4;
     }
     .bottom-bar {
       position: fixed;
@@ -320,14 +198,14 @@
       background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(8px);
       border-top: 1px solid #E5E7EB;
-      padding: 10px 16px;
+      padding: 12px 16px;
       z-index: 100;
     }
     .bottom-bar-inner {
       max-width: 540px;
       margin: 0 auto;
       display: flex;
-      gap: 8px;
+      gap: 10px;
     }
     .bottom-btn {
       flex: 1;
@@ -335,13 +213,10 @@
       background: #EA580C;
       color: #fff;
       text-decoration: none;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 800;
-      padding: 13px 10px;
+      padding: 14px;
       border-radius: 12px;
-    }
-    .bottom-btn.samsung {
-      background: #5B21B6;
     }
   </style>
 </head>
@@ -350,15 +225,8 @@
     <div class="hero">
       <div class="hero-badge">초간단 1분 그림 가이드</div>
       <h1>📲 플로카 앱 바탕화면 설치 방법</h1>
-      <p>휴대폰 기종(갤럭시 / 아이폰)에 맞춰<br>바탕화면에 주황색 <strong>ploca 앱 아이콘</strong>을 만들어 보세요!</p>
-      <a
-        id="hero-samsung-btn"
-        class="cta-btn samsung"
-        href="intent://www.myploca.com/?install=1#Intent;scheme=https;package=com.sec.android.app.sbrowser;S.browser_fallback_url=https%3A%2F%2Fwww.myploca.com%2F%3Finstall%3D1;end"
-      >
-        🟣 갤럭시 [삼성 인터넷]으로 바로 열기 (추천) ›
-      </a>
-      <a class="cta-btn" href="https://www.myploca.com/?install=1" target="_blank" rel="noopener">
+      <p>사용하시는 휴대폰 기종(갤럭시 / 아이폰)을 선택하고<br>아래 그림의 빨간 동그라미를 순서대로 따라 해보세요!</p>
+      <a class="cta-btn" href="https://www.myploca.com" target="_blank" rel="noopener">
         🚀 플로카(www.myploca.com) 바로 열기 ›
       </a>
     </div>
@@ -374,130 +242,62 @@
 
     <!-- ANDROID GUIDE -->
     <div id="sec-android" class="guide-section active">
-      <!-- 🚨 크롬/엣지 .mht 다운로드 주의 안내 -->
-      <div class="warning-card">
-        <div class="warning-card-title">
-          🚨 갤럭시 설치 전 꼭 확인해 주세요!
+      <!-- 🚨 크롬/엣지 X -> 삼성 브라우저 필수 안내 박스 -->
+      <div class="samsung-must-box">
+        <div class="samsung-must-title">
+          🚨 갤럭시는 크롬·엣지 말고 꼭 [삼성 인터넷]으로 열어주세요!
         </div>
-        <div class="warning-card-desc">
-          • <strong>크롬(Chrome)·엣지(Edge)</strong>에서 메뉴 맨 위의 <strong>[⬇️ 다운로드 화살표]</strong>를 누르면 앱이 아니라 웹페이지 파일(<strong>.mht</strong>)이 다운됩니다!<br />
-          • 가장 쉬운 방법은 <strong>① 삼성 인터넷(보라색 아이콘)</strong>으로 여시거나, 크롬/엣지에서는 메뉴 아래쪽의 <strong>② [📲 홈 화면에 추가(앱 설치)]</strong>를 눌러주세요!
+        <div class="samsung-must-body">
+          • <strong class="red">크롬(Chrome)이나 엣지(Edge)에서는 앱 설치가 안 됩니다!</strong> (다운로드를 누르면 앱이 아니라 <code>.mht</code> 웹페이지 파일로 다운되어 세부사항 누르기 전에 끝나버립니다)<br /><br />
+          • 갤럭시에서는 꼭 기본 <strong class="purple">🟣 삼성 인터넷 (삼성 브라우저)</strong>으로 여셔야 아래 그림처럼 바탕화면에 앱으로 바로 설치됩니다!
         </div>
+        <a
+          class="samsung-open-btn"
+          href="intent://www.myploca.com/#Intent;scheme=https;package=com.sec.android.app.sbrowser;S.browser_fallback_url=https%3A%2F%2Fwww.myploca.com;end"
+        >
+          🟣 여기를 누르면 [삼성 브라우저]로 바로 열립니다 ›
+        </a>
       </div>
 
-      <!-- 갤럭시 브라우저 선택 서브탭 -->
-      <div class="sub-tabs">
-        <button id="sub-btn-samsung" class="sub-tab-btn samsung-tab active" onclick="showAndroidSub('samsung')">
-          <span class="sub-badge" style="background:#EDE9FE;color:#5B21B6;">가장 쉬움 ⭐</span><br />
-          🟣 방법 1: 삼성 인터넷
-        </button>
-        <button id="sub-btn-chrome" class="sub-tab-btn chrome-tab" onclick="showAndroidSub('chrome')">
-          <span class="sub-badge" style="background:#FFEDD5;color:#C2410C;">.mht 해결법</span><br />
-          🌐 방법 2: 크롬 · 엣지
-        </button>
+      <div class="notice-banner">
+        💡 삼성 브라우저(삼성 인터넷)로 여신 뒤 아래 1~5단계를 순서대로 따라 해주세요!
       </div>
 
-      <!-- 방법 1: 삼성 인터넷 (기존 1~5단계 그림 + 삼성 인터넷 바로 열기) -->
-      <div id="android-sub-samsung">
-        <div class="notice-banner" style="background:#F5F3FF; border-color:#8B5CF6; color:#5B21B6;">
-          💡 갤럭시 기본 브라우저인 <strong>[🟣 삼성 인터넷]</strong>으로 열면 아래 그림 1~5단계 그대로 10초 만에 설치됩니다!
+      <div class="step-img-card"><img src="android_step_1.png" alt="갤럭시 설치 1단계" /></div>
+      <div class="step-img-card">
+        <div class="step-caption">
+          ⚠️ [다른 브라우저로 열기]를 누르실 때 크롬·엣지 말고 꼭 <strong>[🟣 삼성 인터넷]</strong>으로 열어주세요!
         </div>
-
-        <div class="step-img-card">
-          <div class="step-tip-bar">
-            👉 아래 그림처럼 카톡 우측 하단 [⋮] → [다른 브라우저로 열기]를 누르실 때 꼭 <strong>[🟣 삼성 인터넷]</strong>을 선택해 주세요!
-          </div>
-          <img src="android_step_1.png" alt="갤럭시 설치 1단계" />
-        </div>
-        <div class="step-img-card"><img src="android_step_2.png" alt="갤럭시 설치 2단계" /></div>
-        <div class="step-img-card">
-          <div class="step-tip-bar">
-            ※ 상단 주소창 옆 [⬇️ 아이콘]은 <strong>[🟣 삼성 인터넷]</strong> 전용 앱 설치 버튼입니다!
-          </div>
-          <img src="android_step_3.png" alt="갤럭시 설치 3단계" />
-        </div>
-        <div class="step-img-card"><img src="android_step_4.png" alt="갤럭시 설치 4단계" /></div>
-        <div class="step-img-card"><img src="android_step_5.png" alt="갤럭시 설치 5단계" /></div>
+        <img src="android_step_2.png" alt="갤럭시 설치 2단계" />
       </div>
-
-      <!-- 방법 2: 크롬(Chrome) / 엣지(Edge) 사용자용 -->
-      <div id="android-sub-chrome" style="display:none;">
-        <div class="notice-banner">
-          💡 크롬(Chrome)이나 엣지(Edge)가 기본 브라우저로 열리는 분들은 아래 3단계로 설치해 주세요!
+      <div class="step-img-card">
+        <div class="step-caption">
+          🟣 삼성 브라우저 상단 주소창 옆 [⬇️ 아이콘] → [추가]를 눌러주세요!
         </div>
-
-        <div class="chrome-step-card">
-          <div class="chrome-step-head">
-            <span class="chrome-step-num">STEP 1</span>
-            <div class="chrome-step-title">플로카 화면 상단 [📲 앱 설치] 버튼 누르기</div>
-          </div>
-          <div class="chrome-step-body">
-            크롬에서 <strong>www.myploca.com</strong>을 열었을 때 화면 맨 위에 주황색 <strong>[📲 바탕화면에 앱 설치하기]</strong> 배너가 보이면, 그 버튼을 누르는 것이 가장 빠릅니다!
-          </div>
-        </div>
-
-        <div class="chrome-step-card">
-          <div class="chrome-step-head">
-            <span class="chrome-step-num">STEP 2</span>
-            <div class="chrome-step-title">우측 상단 [⋮ 점 3개] → [📲 홈 화면에 추가]</div>
-          </div>
-          <div class="chrome-step-body">
-            브라우저 오른쪽 맨 위 <strong>[⋮ 점 3개]</strong> 메뉴를 누른 뒤, <strong>맨 위 다운로드 화살표(⬇)는 누르지 마시고</strong> 메뉴 아래쪽의 <strong>[📲 홈 화면에 추가]</strong> (또는 <strong>[앱 설치]</strong>)를 눌러주세요!
-          </div>
-          <div class="chrome-mock-menu">
-            <div class="mock-row bad">
-              <span>⬇️ 다운로드 (오프라인 페이지 .mht 저장)</span>
-              <span class="badge-bad">❌ 누르지 마세요!</span>
-            </div>
-            <div class="mock-row" style="color:#9CA3AF;">
-              <span>⭐ 북마크 / 최근 탭 / 방문 기록 ...</span>
-              <span>아래로 스크롤 ▾</span>
-            </div>
-            <div class="mock-row good">
-              <span>📲 홈 화면에 추가 (또는 앱 설치)</span>
-              <span class="badge-good">⭕ 여기를 클릭!</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="chrome-step-card">
-          <div class="chrome-step-head">
-            <span class="chrome-step-num">STEP 3</span>
-            <div class="chrome-step-title">[설치] 누르면 바탕화면에 앱 생성 완료! 🎉</div>
-          </div>
-          <div class="chrome-step-body">
-            작은 안내창이 뜨면 <strong>[설치]</strong>를 눌러주세요.<br />
-            ※ 만약 크롬·엣지에서 계속 <code>.mht</code> 파일만 받아진다면, 위쪽 보라색 <strong>[🟣 갤럭시 삼성 인터넷으로 바로 열기]</strong> 버튼을 누르시면 한 번에 해결됩니다!
-          </div>
-        </div>
+        <img src="android_step_3.png" alt="갤럭시 설치 3단계" />
       </div>
+      <div class="step-img-card"><img src="android_step_4.png" alt="갤럭시 설치 4단계" /></div>
+      <div class="step-img-card"><img src="android_step_5.png" alt="갤럭시 설치 5단계" /></div>
     </div>
 
     <!-- IPHONE GUIDE -->
     <div id="sec-iphone" class="guide-section">
       <div class="notice-banner" style="background:#DBEAFE; border-color:#3B82F6; color:#1E40AF;">
-        💡 아이폰(iOS)은 총 6단계입니다. 아래 그림을 순서대로 따라 해주세요!
+        💡 아이폰(iOS)은 <strong>Safari(사파리)</strong>에서 총 6단계로 설치됩니다. 아래 그림을 순서대로 따라 해주세요!
       </div>
       <div class="step-img-card"><img src="iphone_step_1.png" alt="아이폰 설치 1단계" /></div>
       <div class="step-img-card"><img src="iphone_step_2.png" alt="아이폰 설치 2단계" /></div>
       <div class="step-img-card"><img src="iphone_step_3.png" alt="아이폰 설치 3단계" /></div>
       <div class="step-img-card"><img src="iphone_step_4.png" alt="아이폰 설치 4단계" /></div>
-      <div class="step-img-card"><img src="iphone_step_5.png" alt="iphone_step_5" /></div>
+      <div class="step-img-card"><img src="iphone_step_5.png" alt="아이폰 설치 5단계" /></div>
       <div class="step-img-card"><img src="iphone_step_6.png" alt="아이폰 설치 6단계" /></div>
     </div>
   </div>
 
   <div class="bottom-bar">
     <div class="bottom-bar-inner">
-      <a
-        id="bottom-samsung-btn"
-        class="bottom-btn samsung"
-        href="intent://www.myploca.com/?install=1#Intent;scheme=https;package=com.sec.android.app.sbrowser;S.browser_fallback_url=https%3A%2F%2Fwww.myploca.com%2F%3Finstall%3D1;end"
-      >
-        🟣 삼성 인터넷으로 열기
-      </a>
-      <a class="bottom-btn" href="https://www.myploca.com/?install=1" target="_blank" rel="noopener">
-        👉 플로카 열기
+      <a class="bottom-btn" href="https://www.myploca.com" target="_blank" rel="noopener">
+        👉 설치하러 가기 (www.myploca.com)
       </a>
     </div>
   </div>
@@ -509,19 +309,9 @@
       document.getElementById('sec-android').classList.toggle('active', os === 'android');
       document.getElementById('sec-iphone').classList.toggle('active', os === 'iphone');
     }
-    function showAndroidSub(mode) {
-      document.getElementById('sub-btn-samsung').classList.toggle('active', mode === 'samsung');
-      document.getElementById('sub-btn-chrome').classList.toggle('active', mode === 'chrome');
-      document.getElementById('android-sub-samsung').style.display = mode === 'samsung' ? 'block' : 'none';
-      document.getElementById('android-sub-chrome').style.display = mode === 'chrome' ? 'block' : 'none';
-    }
-    // Auto-select iPhone tab and hide Samsung-only intent buttons if user opens on iPhone/iPad
+    // Auto-select iPhone tab if user opens on iPhone/iPad
     if (/iPhone|iPad|iPod/i.test(navigator.userAgent)) {
       showTab('iphone');
-      var heroSamsung = document.getElementById('hero-samsung-btn');
-      var bottomSamsung = document.getElementById('bottom-samsung-btn');
-      if (heroSamsung) heroSamsung.style.display = 'none';
-      if (bottomSamsung) bottomSamsung.style.display = 'none';
     }
   </script>
 </body>
